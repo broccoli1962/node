@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
-app.post('/ranking', async (req, res) => {
+app.get('/ranking', async (req, res) => {
   const data = req.body;
   const score = data.score;
   const playerName = data.playerName;
