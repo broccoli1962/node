@@ -25,6 +25,24 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
+app.post('/ranking', async (req, res) => {
+  const data = req.body;
+  const score = data.score;
+  const playerName = data.playerName;
+
+  try{
+    await client.connect();
+    const query = 'INSERT INTO rank (player_id , score) VALUES ($1, $2)';
+    const values = [playerName, score];
+    await client.query(query, values);
+    await client.end();
+    res.status(200).send('rank data saved');
+  }catch(err){
+    console.error(err);
+    res.status(500).send('error rank data saved');
+  }
+});
+
 app.listen(PORT, () => {
     console.log(`server running at http://localhost:${PORT}/`);
 });
