@@ -4,7 +4,7 @@ const multer = require('multer');
 
 const app = express();
 const rank = require("./routes/rank");
-const router = require("./routes");
+const router = require("./routes/index");
 // app.use(express.json);
 
 client.connect();
