@@ -1,6 +1,10 @@
 const express = require('express');
 const rank = express.Router();
 
+const multer = require('multer');
+const storage = multer.memoryStorage(); // 메모리 저장소를 사용
+const upload = multer({ storage: storage });
+
 /*데이터 db 저장*/
 rank.post('/ranking', upload.none(), async (req, res) => {
     let playerName = req.body.playerName;
