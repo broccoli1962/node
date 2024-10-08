@@ -1,13 +1,16 @@
 const { Client } = require("pg");
 const express = require('express');
 const multer = require('multer');
+
 const app = express();
-const rank = require("./route/rank");
+const rank = require("./routes/rank");
+const router = require("./routes");
 // app.use(express.json);
 
 client.connect();
 const PORT = 3000;
 
+//통합 데이터베이스
 const client = new Client({
   user: "root",
   host: "svc.sel5.cloudtype.app",
@@ -23,9 +26,7 @@ const upload = multer({ storage: storage });
 app.use('/ranking',rank);
 app.use('/data', rank);
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
-});
+app.use('/', router);
 
 app.listen(PORT, () => {
   console.log(`server running at http://localhost:${PORT}/`);
