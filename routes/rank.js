@@ -1,5 +1,5 @@
 const express = require('express');
-const rank = express().router;
+const rank = express.Router();
 
 /*데이터 db 저장*/
 rank.post('/ranking', upload.none(), async (req, res) => {
