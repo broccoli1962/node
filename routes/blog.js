@@ -1,12 +1,12 @@
-const express = required('express')
+const express = require('express');
 var home = express.Router();
 
 home.get('/', (req, res)=>{
-  res.render('broccoli.html');
+  res.render('titlepage.html');
 });
 
-home.get('/broccoli2', (req, res)=>{
-  res.render('broccoli2.html');
-})
+home.get('/pptpage', (req, res)=>{
+  res.render('pptpage.html');
+});
 
 module.exports = home;
