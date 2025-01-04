@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+}
+
+/*menu start*/
+#menu {
+  width: 100%;
+  background: black;
+}
+
+#menu>div {
+  margin: auto;
+  width: 400px;
+  padding: 15px 0;
+}
+
+/* 로고 css */
+#menu>div>a>h1 {
+  text-align: center;
+  color: white;
+  padding: 0px 30px 0px 0px;
+  font-size: 30px;
+  font-family: Arial;
+  float: left;
+}
+
+#menu>div>ul>li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding: 5px 15px 0px 0px;
+}
+
+#menu .menuLink>a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial;
+}
+
+#menu .menuLink>a:hover {
+  color: cyan;
+}
+
+/* download */
+#download {
+  width: 100%;
+}
+
+#download>div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#download>div>img {
+  width: 80px;
+  margin-right: 30px;
+}
+
+#version {
+  border: 1px solid black;
+  padding-top: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+#dwn_btn {
+  width: 100px;
+}
+
+.download_button {
+  margin-top: 12px;
+  max-height: 40px;
+}
+
+/*--plan--*/
+
+#plan-list {
+  width: 100%;
+  height: auto;
+  background: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.plan-box {
+  position: relative;
+  margin: 50px;
+  min-width: 400px;
+  min-height: 450px;
+  max-width: 300px;
+  border: 7px solid rgb(227, 165, 89);
+}
+
+.plan-box>ul>li {
+  list-style-type: none;
+  padding-left: 70px;
+  margin-top: 30px;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
+  color: rgb(45, 188, 210);
+}
+
+.btn {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  background-color: darkviolet;
+  color: aliceblue;
+  border-radius: 5px;
+  min-height: 30px;
+  min-width: 200px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+  color: cyan;
+}
+
+/*--footer--*/
+#footer {
+  display: flex;
+  padding: 50px 40px;
+  border-top: 2px solid rgb(90, 86, 86);
+  background: rgba(159, 148, 148, 0.131);
+  clear: both;
+}
+
+#footerExplan {
+  padding: 10px 60px;
+}
+
+#footerExplan>p,
+span {
+  color: #828C94;
+}
+
+#footerExplan>span {
+  color: rgb(151, 137, 137);
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+
+/*menu start*/
+#menu {
+    width: 100%;
+    background: black;
+}
+
+#menu>div {
+    margin: auto;
+    width: 400px;
+    padding: 15px 0;
+}
+
+/* 로고 css */
+#menu>div>a>h1 {
+    text-align: center;
+    color: white;
+    padding: 0px 30px 0px 0px;
+    font-size: 30px;
+    font-family: Arial;
+    float: left;
+}
+
+#menu>div>ul>li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 5px 15px 0px 0px;
+}
+
+#menu .menuLink>a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial;
+}
+
+#menu .menuLink>a:hover {
+    color: cyan;
+}
+
+.main {
+    padding: 10 3% 10 3%;
+    height: auto;
+}
+
+.modal-backdrop {
+    display: none;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+/*--footer--*/
+#footer {
+    display: flex;
+    padding: 50px 40px;
+    border-top: 2px solid rgb(90, 86, 86);
+    background: rgba(159, 148, 148, 0.131);
+    clear: both;
+  }
+  
+  #footerExplan {
+    padding: 10px 60px;
+  }
+  
+  #footerExplan>p,
+  span {
+    color: #828C94;
+  }
+  
+  #footerExplan>span {
+    color: rgb(151, 137, 137);
+  }

@@ -1,0 +1,203 @@
+/* @font-face { /* 애플산돌고딕 폰트 적용
+  font-family: "logofont";
+  src: url("font/logofont.ttf") format("truetype");
+  font-weight: normal;
+} 이후 "SDGothic"으로 폰트 적용 가능 */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+}
+
+#register {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+/*menu start*/
+#menu {
+  width: 100%;
+  background: black;
+}
+
+#menu > div {
+  margin: auto;
+  width: 400px;
+  padding: 15px 0;
+}
+/* 로고 css */
+#menu > div> a > h1{ 
+  text-align: center;
+  color: white;
+  padding: 0px 30px 0px 0px;
+  font-size:30px;
+  font-family: Arial;
+  float: left;
+}
+
+#menu > div > ul > li {
+  display:inline-block;
+  list-style: none;
+  text-align: center;
+  padding: 5px 15px 0px 0px;
+}
+
+/* menu css */
+#menu .menuLink > a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial;
+}
+
+#menu .menuLink > a:hover {
+  color: cyan;
+}
+/*menu end*/
+
+/* slide */
+.slide{
+  overflow: hidden;
+  height: auto;
+}
+.inner-list{
+  width: 300vw;
+  transition: transform 0.5s;
+}
+.inner{
+  position: relative;
+  width: 100vw;
+  float: left;
+}
+.inner img{
+  width: 100%;
+}
+.button-list{
+  display: flex;
+  justify-content: center;
+}
+.button-list > div > button{
+  width: 120px;
+  height: 7px;
+  background-color: white;
+}
+/* slide end */
+
+/* detail_list */
+#detail_list > div:first-child{
+  width: auto;
+  height: 150px;
+}
+#detail_list > div > ul{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+}
+#detail_list > div > ul > a{
+  width: 100%;
+  height: 100%;
+}
+
+#detail_list > div > ul > li{
+  list-style: none;
+  width: 18%;
+  height: 100px;
+  text-align: center;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+#detail_list > div > ul > li:hover{
+  background-color:cornflowerblue;
+}
+
+#detail_list > div{
+  width: auto;
+  min-width: 600px;
+  height: 400px;
+}
+
+#detail_list > div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+#detail_list > div > div{
+  overflow: hidden;
+  width: 500px;
+  height: auto;
+  margin: 0 50px 0 50px;
+}
+
+#detail_list > div > div> h2{
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+#detail_list > div:nth-child(3){
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#detail_list > div:nth-child(4){
+  display: flex;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+#detail_list > div:nth-child(5){
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+/* detail_list_end */
+
+/* TEST */
+
+/* TEST END */
+
+/*--footer--*/
+#footer {
+  display: flex;
+  padding: 50px 40px;
+  border-top: 2px solid rgb(90, 86, 86);
+  background: rgba(159, 148, 148, 0.131);
+  clear: both;
+}
+
+#footerExplan {
+  padding: 10px 60px;
+}
+
+#footerExplan>p,
+span {
+  color: #828C94;
+}
+
+#footerExplan>span {
+  color: rgb(151, 137, 137);
+}

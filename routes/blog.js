@@ -2,7 +2,7 @@ const express = require('express');
 var home = express.Router();
 
 home.get('/', (req, res)=>{
-  res.render('titlepage.html');
+  res.render('main.html');
 });
 
 home.get('/pptpage', (req, res)=>{
