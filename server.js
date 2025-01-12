@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-const rank = require("./routes/rank");
-const home = require("./routes/blog");
-const database = require("./routes/database");
+const rank = require("./public/routes/rank");
+const home = require("./public/routes/blog");
+const database = require("./public/routes/database");
 
-// app.use(express.json);
+app.use(express.json());
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
