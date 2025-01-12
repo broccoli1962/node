@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/89587a85ee.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="debug.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/debug.css">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
         <!-- 상단 메뉴 바 컨테이너 -->
         <nav id="menu">
             <div>
-                <a href="main.html">
+                <a href="/">
                     <h1>TalK</h1>
                 </a>
                 <ul>
-                    <li class="menuLink"><a href="management.html">회사 소개</a></li>
-                    <li class="menuLink"><a href="debug.html">커뮤니티</a></li>
-                    <li class="menuLink"><a href="download.html">다운로드</a></li>
+                    <li class="menuLink"><a href="/management">회사 소개</a></li>
+                    <li class="menuLink"><a href="/debug">커뮤니티</a></li>
+                    <li class="menuLink"><a href="/download">다운로드</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,7 +48,7 @@
     </section>
     <div class="modal-backdrop"></div>
     <div w3-include-html="./modal.html"></div>
-    <script type="text/javascript" src="./board.js"></script>
+    <script src="/routes/board.js" type="text/javascript"></script>
     <div id="footer">
         <div id="footerExplan">
             <p>대표이사: 이형권 / 사업자 등록번호: 888-88-88888 / 김해시 진영읍 장등로 19번길</p>
